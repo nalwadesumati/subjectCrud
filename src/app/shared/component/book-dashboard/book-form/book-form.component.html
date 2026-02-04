@@ -1,0 +1,20 @@
+<h3 class="text-danger text-center fw-bold">
+    {{isInEditMode ? "Update BookName" :"Add Book"}}
+</h3>
+
+
+<div class="card">
+    <div class="card-body">
+        <form #bookForm="ngForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label>Book Name</label>
+
+                <input ngModel name="bname" required type="text" class="form-control" />
+            </div>
+
+            <button *ngIf="!isInEditMode" mat-raised-button color="primary" class="w-100">Add Book</button>
+            <button (click)="onUpdateBook()" type="button" *ngIf="isInEditMode" mat-raised-button color="warn"
+                class="w-100">Update Book</button>
+        </form>
+    </div>
+</div>
