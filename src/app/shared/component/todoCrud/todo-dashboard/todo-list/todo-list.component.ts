@@ -3,7 +3,6 @@ import { Itodo } from 'src/app/shared/models/todo';
 import { TodoServiceService } from 'src/app/shared/service/todo-service.service';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { GetConfirmComponent } from '../../get-confirm/get-confirm.component';
-import { Ito } from 'rxjsPractice/src/app/shared/todoCrud/models/todocrud';
 
 @Component({
   selector: 'app-todo-list',
